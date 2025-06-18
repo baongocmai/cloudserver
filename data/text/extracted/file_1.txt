@@ -1,0 +1,1350 @@
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+TÀI LIỆU
+HƯỚNG DẪN SỬ DỤNG
+Tên dự án phần mềm:
+Mã hiệu dự án: PORTAL_MOBIFONE
+Mã hiệu tài liệu: PORTAL_User_Guide
+Phiên bản: 1.0
+Hà Nội, 05/2024
+1 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+MỤC LỤC
+I. TỔNG QUAN HỆ THỐNG ....................................................................................................3
+1. Mục đích và ý nghĩa của Tài liệu......................................................................................3
+2. Phạm vi áp dụng ..............................................................................................................3
+3. Các thuật ngữ và viết tắt ...................................................................................................4
+4. Cấu trúc tài liệu................................................................................................................4
+II. GIỚI THIỆU CÁC CHỨC NĂNG ......................................................................................4
+1. Các chức năng của hệ thống phân quyền cho người dùng .................................................4
+2. Đối tượng sử dụng ...........................................................................................................9
+III. HƯỚNG DẪN SỬ DỤNG CÁC CHỨC NĂNG ............................................................... 10
+1. Vận hành dịch vụ máy ảo ............................................................................................... 10
+1.1 Đăng nhập thông tin tài khoản ....................................................................................10
+1.2 Tạo máy ảo.................................................................................................................12
+1.3 Vận hành dịch vụ máy ảo ...........................................................................................23
+1.4 Nâng cấp máy ảo ........................................................................................................56
+1.5 Giám sát hiệu năng máy ảo .........................................................................................60
+2. Vận hành dịch vụ lưu trữ (Volume) ................................................................................ 64
+2.1 Đăng nhập thông tin tài khoản ....................................................................................64
+2.2 Chỉnh sửa thông tin Volume .......................................................................................69
+2.3 Gắn/ gỡ volume với máy ảo ........................................................................................71
+2.4 Xóa volume ................................................................................................................77
+3. Vận hành dịch vụ Cloud Storage .................................................................................... 81
+3.1 Tạo backup bucket .....................................................................................................81
+3.2 Sửa thông tin backup bucket .......................................................................................85
+3.3 Xóa Backup bucket ....................................................................................................89
+3.4 Xác thực, cấp phép đọc ghi back bucket .....................................................................92
+4. Quản lý thanh toán ......................................................................................................... 96
+4.4 Quản lý lịch nạp tiền ..................................................................................................96
+4.5 Nạp tiền vào tài khoản khách hàng .............................................................................97
+2 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+I. TỔNG QUAN HỆ THỐNG
+1. Mục đích và ý nghĩa của Tài liệu
+Tài liệu được xây dựng nhằm mục đích giúp người dùng hiểu và sử dụng sản
+phẩm Portal Cloud một cách dễ dàng và hiệu quả.
+2. Phạm vi áp dụng
+Tài liệu này được áp dụng cho Hệ thống vận hành dịch vụ và quản lý thanh toán
+với các tính năng chính:
++ Quản lý tài khoản/ Khách hàng đăng nhập tài khoản online
++ Vận hành dịch vụ máy ảo/ Tạo máy ảo
++ Vận hành dịch vụ máy ảo/ Vận hành dịch vụ máy ảo
++ Vận hành dịch vụ máy ảo/ Nâng cấp cấu hình máy ảo
++ Giám sát hiệu năng máy ảo/ Đăng ký nhận thông tin hiệu năng máy ảo
++ Vận hành dịch vụ lưu trữ (Volume)/ Tạo volume mới
++ Vận hành dịch vụ lưu trữ(Volume)/ Chỉnh sửa thông tin volume
++ Vận hành dịch vụ lưu trữ (Volume)/ Gắn/gỡ volume với máy ảo
++ Vận hành dịch vụ lưu trữ (Volume)/ Xóa volume
++ Vận hành dịch vụ cloud storage/ Tạo backup bucket
++ Vận hành dịch vụ cloud storage/ Sửa thông tin backup bucket
++ Vận hành dịch vụ cloud storage/ Xác thực, cấp phép đọc ghi backup
+bucket
++ Quản lý thanh toán/ Quản lý lịch sử nạp tiền
++ Quản lý thanh toán/ Nạp tiền vào tài khoản khách hàng
+3 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+3. Các thuật ngữ và viết tắt
+Thuật ngữ Giải thích thuật ngữ
+TH Trường hợp
+Miền (Miền Bắc, Miền Nam). Hệ thống Portal Cloud dùng để
+mua bán các dịch vụ Cloud bao gồm tạo máy ảo, volume,
+backup bucket... và các dịch vụ Cloud này có hạ tầng ở 2 miền
+Region
+Bắc và Nam. Khi truy cập trang Web để sử dụng dịch vụ,
+khách hàng có thể chọn sử dụng dịch vụ Cloud ở hạ tầng miền
+Bắc hoặc Nam tùy theo Region được lựa chọn tương ứng.
+4. Cấu trúc tài liệu
+Tài liệu này gồm 3 phần, được bố trí như sau:
+Phần 1: Tổng quan
+Giới thiệu về mục đích, cấu trúc, các thuật ngữ viết tắt trong tài liệu
+Phần 2: Giới thiệu các chức năng
+Các chức năng của hệ thống được phân quyền cho người dùng sử dụng
+Đối tượng sử dụng hệ thống
+Phần 3: Hướng dẫn sử dụng các chức năng được nêu ở mục 2
+II. GIỚI THIỆU CÁC CHỨC NĂNG
+1. Các chức năng của hệ thống phân quyền cho người dùng
+STT Tính năng Yêu cầu sau sửa chữa
+- Khôi phục lại chức năng đang bị lỗi đáp ứng tối
+thiểu như thiết kế chức năng của hệ thống: cho phép
+Vận hành dịch vụ máy
+1 khách hàng mới chủ động khởi tạo máy ảo một cách dễ
+ảo/Tạo máy ảo
+dàng, hệ thống thiết kế dưới dạng thực hiện từng bước
+giúp đơn giản hóa quá trình thiết lập.
+4 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+STT Tính năng Yêu cầu sau sửa chữa
+- Giao diện chọn Region/Zone khi tạo máy ảo.
+- Tạo được máy ảo trên tối thiểu 02 Cluster Cloud khác
+cài đặt phần mềm Open Stack phiên bản Train thuộc hệ
+thuộc Public Cloud của MobiFone (02 cluster trang bị
+năm 2021) tương ứng theo lựa chọn Region/Zone của
+khách hàng. theo các bước:
+• Chọn loại máy ảo, nhập tên máy ảo
+• Tự động đề xuất khu vực dựa trên vị trí của khách hàng
+• Chọn gói cấu hình máy ảo
+• Lựa chọn sử dụng IP public hay không
+• Chọn dung lượng volume gốc
+• Chọn hệ điều hành
+• Chọn keypair
+• Nhập public key sẵn có
+• Review thông tin
+• Tự động thanh toán
+• Sinh máy ảo theo các thông tin được nhập
+- Cho phép khi tạo máy ảo sẽ lựa chọn được nhiều hệ
+điều hành phiên bản khác nhau mà theo nhu cầu người
+dùng muốn cài đặt.
+- Cho phép khi thao tác tạo máy ảo sử dụng các thanh
+trượt/kéo thả để thuận tiện cho người dùng thay đổi các
+yêu cầu về số CPU/RAM/Dung lượng ổ cứng. Có hiển thị
+bảng giá khi lựa chọn cấu hình.
+- Các thao tác người dùng thực hiện bằng giao diện đồ
+họa.
+- Tác động vào hạ tầng Cloud bằng các hàm API.
+- Khôi phục lại chức năng đang bị lỗi đáp ứng tối
+thiểu như thiết kế chức năng của hệ thống
+- Thực hiện thành công các thao tác đối với máy ảo trên
+tối thiểu 02 Cluster Cloud khác cài đặt phần mềm Open
+Stack phiên bản Train thuộc hệ thuộc Public Cloud của
+MobiFone (02 cluster trang bị năm 2021) tương ứng theo
+lựa chọn Region/Zone của khách hàng, gồm tối thiểu các
+Vận hành dịch vụ máy
+thao tác sau:
+2 ảo/Vận hành dịch vụ + Bật máy ảo
+máy ảo + Tắt máy ảo
++ Khởi động lại máy ảo
++ Kết nối console vào giao diện máy ảo
++ Xem performance máy ảo
++ Điều chỉnh gói cấu hình
++ Thay đổi tên máy ảo
++ Gắn, gỡ volume
++ Thay đổi security group
+5 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+STT Tính năng Yêu cầu sau sửa chữa
+- Cho phép khi thao tác thay đổi cấu hinh máy ảo sử dụng
+các thanh trượt/kéo thả để thuận tiện cho người dùng thay
+đổi các yêu cầu về số CPU/RAM/Dung lượng ổ cứng. Có
+hiển thị bảng giá khi lựa chọn cấu hình thay đổi.
+- Các thao tác người dùng thực hiện bằng giao diện đồ
+họa.
+- Tác động vào hạ tầng Cloud bằng các hàm API.
+- Khôi phục lại chức năng đang bị lỗi đáp ứng tối
+thiểu như thiết kế chức năng của hệ thống: Chức năng
+cho phép khách hàng thay đổi (nâng lên) gói cấu hình
+máy ảo mới, đồng thời giữ nguyên máy ảo hiện hành và
+được áp dụng gói cấu hình mới.
+- Thực hiện thành công các thao tác nâng cấp cấu hình
+máy ảo trên tối thiểu 02 Cluster Cloud khác cài đặt phần
+Vận hành dịch vụ máy
+mềm Open Stack phiên bản Train thuộc hệ thuộc Public
+3 ảo/Nâng cấp cấu hình Cloud của MobiFone (02 cluster trang bị năm 2021)
+máy ảo tương ứng theo lựa chọn Region/Zone của khách hàng,
+gồm tối thiểu các thao tác sau:
++ Thay đổi RAM
++ Thay đổi số vCPU
++ Tự động thanh toán
+- Các thao tác người dùng thực hiện bằng giao diện đồ
+họa.
+- Tác động vào hạ tầng Cloud bằng các hàm API.
+- Thực hiện thành công các thao tác quản lý Đăng ký
+nhận thông tin máy ảo trên tối thiểu 02 Cluster Cloud
+khác cài đặt phần mềm Open Stack phiên bản Train thuộc
+hệ thuộc Public Cloud của MobiFone (02 cluster trang bị
+năm 2021) tương ứng theo lựa chọn Region/Zone của
+khách hàng, gồm tối thiểu các thao tác sau:
++ Đăng ký nhận thông tin hiệu năng máy ảo:
+Giám sát hiệu năng + Chọn nhận thông tin hiệu năng máy ảo
+máy ảo/Đăng ký nhận + Nhập thông số ngưỡng đạt cảnh báo
+4
+thông tin hiệu năng + Đăng ký thành công (không tính phí)
+máy ảo - Các thao tác người dùng thực hiện bằng giao diện đồ
+họa.
+- Tác động vào hạ tầng Cloud bằng các hàm API.
+- Có giao diện đăng ký dịch vụ Managed Service
+- Có tùy chọn dịch vụ: cảnh báo qua email/SMS/cảnh báo
+qua điện thoại
+- Tương tác với người dùng qua giao diện đồ họa
+- Tương tác với các hệ thống Cloud/Giám sát qua API.
+Vận hành dịch vụ lưu - Thực hiện thành công các thao tác Tạo volume mới trên
+5 trữ (Volume)/Tạo tối thiểu 02 Cluster Cloud khác cài đặt phần mềm Open
+volume mới Stack phiên bản Train thuộc hệ thuộc Public Cloud của
+6 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+STT Tính năng Yêu cầu sau sửa chữa
+MobiFone (02 cluster trang bị năm 2021) tương ứng theo
+lựa chọn Region/Zone của khách hàng, gồm tối thiểu các
+thao tác sau:
++Nhập thông tin volume
++Tự động đề xuất khu vực dựa trên vị trí của khách hàng
++Tự động chọn ngày bắt đầu, ngày kết thúc dự kiến
++Tự động hiển thị giá theo dung lượng volume
++Tự động thanh toán
+- Các thao tác người dùng thực hiện bằng giao diện đồ
+họa.
+- Tác động vào hạ tầng Cloud bằng các hàm API.
+- Thực hiện thành công các thao tác Chỉnh sửa thông tin
+Volume trên tối thiểu 02 Cluster Cloud khác cài đặt phần
+mềm Open Stack phiên bản Train thuộc hệ thuộc Public
+Cloud của MobiFone (02 cluster trang bị năm 2021)
+tương ứng theo lựa chọn Region/Zone của khách hàng,
+gồm tối thiểu các thao tác sau:
+Vận hành dịch vụ lưu • Nhập thông tin chỉnh sửa volume
+6 trữ (Volume)/Chỉnh • Chỉnh sửa dung lượng volume
+sửa thông tin volume • Chỉnh sửa thời gian sử dụng volume
+• Tự động cập nhật giá
+• Tự động cập nhật ngày hết hạn
+• Tiến hành thanh toán
+- Các thao tác người dùng thực hiện bằng giao diện đồ
+họa.
+- Tác động vào hạ tầng Cloud bằng các hàm API.
+- Thực hiện thành công các thao tác Gắn/gỡ volume với
+máy ảo trên tối thiểu 02 Cluster Cloud khác cài đặt phần
+mềm Open Stack phiên bản Train thuộc hệ thuộc Public
+Cloud của MobiFone (02 cluster trang bị năm 2021)
+Vận hành dịch vụ lưu tương ứng theo lựa chọn Region/Zone của khách hàng,
+7 trữ (Volume)/Gắn/gỡ gồm tối thiểu các thao tác sau:
+volume với máy ảo + Lựa chọn máy ảo
++ Gắn/gõ volume với máy ảo
+- Các thao tác người dùng thực hiện bằng giao diện đồ
+họa.
+- Tác động vào hạ tầng Cloud bằng các hàm API.
+- Thực hiện thành công các thao tác Xóa volume với máy
+ảo trên tối thiểu 02 Cluster Cloud khác cài đặt phần mềm
+Open Stack phiên bản Train thuộc hệ thuộc Public Cloud
+Vận hành dịch vụ lưu
+của MobiFone (02 cluster trang bị năm 2021) tương ứng
+8 trữ (Volume)/Xoá
+theo lựa chọn Region/Zone của khách hàng, gồm tối thiểu
+volume
+các thao tác sau:
+• Kiểm tra trạng thái volume trước khi xoá
+• Xoá volume
+7 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+STT Tính năng Yêu cầu sau sửa chữa
+- Các thao tác người dùng thực hiện bằng giao diện đồ
+họa.
+- Tác động vào hạ tầng Cloud bằng các hàm API.
+Khôi phục lại chức năng đang bị lỗi đáp ứng tối thiểu
+như thiết kế chức năng của hệ thống: Chức năng cho
+phép khách hàng tạo mới backup bucket. Giao diện tạo
+Bucket (Container) với các thông tin: Tên, Dung lượng,
+Giới hạn thư mục/file trong Container, set tickbox Cho
+Vận hành dịch vụ
+phép đọc với danh sách User có thể đọc trong Listbox.
+9 cloud storage/Tạo
+Các thao tác thực hiện:
+backup bucket
++ Nhập thông tin backup bucket
++ Tự động cập nhật giá
++ Tự động cập nhật ngày hết hạn
++ Tạo API kết nối vào backup bucket
++ Tự động thanh toán
+Vận hành dịch vụ Khôi phục lại chức năng đang bị lỗi đáp ứng tối thiểu
+cloud storage/Sửa như thiết kế chức năng của hệ thống: Chức năng cho
+10
+thông tin backup phép khách hàng chỉnh sửa thông tin backup bucket đã
+bucket có.
+Khôi phục lại chức năng đang bị lỗi đáp ứng tối
+thiểu như thiết kế chức năng của hệ thống: Cho phép
+Vận hành dịch vụ khách hàng tìm kiếm, xem và quản lý danh sách các
+cloud storage/Hiển thị backup bucket đã tạo trên hệ thống. Hiển thị các bucket
+11 danh sách backup theo bảng với các cột: Tên, Tổng số Object trong
+bucket Container, Dung lượng, các Action có thể thao tác gồm
+Thêm Container, tải file lên Bucket, Sửa, Xóa Bucket,
+tìm kiếm theo tên bucket
+Khôi phục lại chức năng đang bị lỗi đáp ứng tối
+12 thiểu như thiết kế chức năng của hệ thống: Chức
+Vận hành dịch vụ
+năng cho phép khách hàng thực hiện xóa backup
+cloud storage/Xoá
+bucket trên danh sách. Các thao tác thực hiện:
+backup bucket
++ Xoá backup bucket
++ Thông báo yêu cầu xác nhận
+Khôi phục lại chức năng đang bị lỗi đáp ứng tối
+thiểu như thiết kế chức năng của hệ thống: Chức
+Vận hành dịch vụ
+năng cho phép khách hàng cấp quyền đọc ghi backup
+cloud storage/Xác
+13 bucket cho tài khoản người dùng khác. Các thao tác
+thực, cấp phép đọc ghi
+bao gồm:
+back bucket
++ Xác thực thông tin kết nối
++ Xác nhận quyền đọc/ghi bucket
+Khôi phục lại chức năng đang bị lỗi đáp ứng tối
+Quản lý thanh
+14 thiểu như thiết kế chức năng của hệ thống: Hệ thống
+toán/Quản lý lịch sử
+cho phép khách hàng xem lịch sử các lần nạp tiền (nạp
+nạp tiền
+điểm) vào tài khoản của khách hàng.
+8 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+STT Tính năng Yêu cầu sau sửa chữa
+Khôi phục lại chức năng đang bị lỗi đáp ứng tối
+thiểu như thiết kế chức năng của hệ thống: Sau khi
+Khách hàng nộp tiền qua phương thức chuyển khoản
+hoặc nộp tiền trực tiếp, thì nhân viên bán hàng có thể
+xác nhận nạp tiền(nạp điểm) cho khách hàng, số tiền
+Quản lý thanh
+15 tương ứng sẽ được cộng vào tài khoản trả trước của
+toán/Nạp tiền vào tài
+khách hàng. Các bước thực hiện như sau:
+khoản khách hàng
+§ Chọn khách hàng
+§ Chọn phương thức thanh toán
+§ Điền số tiền(điểm)
+§ Nạp tiền vào tài khoản
+§ Gửi thư thông báo cho khách hàng
+2. Đối tượng sử dụng
+Hệ thống bao gồm những nhóm người sử dụng được liệt kê dưới bảng sau:
+Tên vai trò
+STT Giải thích vai trò
+trong hệ thống
+Truy cập và sử dụng hệ thống để đăng ký các dịch
+1 Khách hàng vụ tài nguyên, máy ảo cloud trên hệ thống và trả
+tiền để được sử dụng các dịch vụ
+Quản lý, monitor các dịch vụ, kiểm tra log lỗi, quản
+Quản trị hệ
+2 lý người dùng, quản lý các danh mục định sẵn ngay
+thống
+trên Portal
+Nhân viên bán Bán các dịch vụ, đăng ký dịch vụ cho khách hàng
+3
+hàng khi khách hàng đến mua dịch vụ trực tiếp
+Tiếp nhận yêu cầu hỗ trợ từ khách hàng ngay trên
+4 Nhân viên hỗ trợ Portal và có thể chuyển tiếp yêu cầu hỗ trợ đến bộ
+phận kỹ thuật để xử lý
+Quản lý các cấp nhân viên bán hàng và kiểm tra,
+thống kê các đơn hàng dịch vụ đã bán cho khách
+5 Quản lý bán hàng
+hàng, thống kê các khách hàng có dịch vụ sắp hết
+hạn để thông báo cho khách hàng gia hạn dịch vụ…
+9 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+Xuất báo cáo doanh thu từ các dịch vụ đã bán cho
+6 Kế toán
+khách hàng.
+III. HƯỚNG DẪN SỬ DỤNG CÁC CHỨC NĂNG
+1. Vận hành dịch vụ máy ảo
+1.1 Đăng nhập thông tin tài khoản
+ Đường dẫn: Truy cập trang chủ Portal Cloud > Đăng nhập
+ Mô tả chức năng
+- Sau khi khách hàng đã đăng ký tài khoản thành công, khách hàng thực
+hiện đăng nhập tài khoản của mình đã đăng ký vào hệ thống
+- TH: Đối với Khách hàng không chọn xác thực bằng email hay sms.
++ Bước 1: Tại màn hình trang chủ portal Khách hàng chọn Đăng nhập
+Hình 1 Màn hình chính
++ Bước 2: Tại màn hình đăng nhập , khách hàng thực hiện nhập địa
+chỉ email và mật khẩu đăng ký.
++ Bước 3: Chọn nút ‘Đăng nhập’
+10 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+Hình 2 Màn hình đăng nhập
+- TH2: Đối với khách hàng có đăng ký xác thực tài khoản bằng email
+hoặc sms.
++ Bước 1: Sau khi đăng nhập thông tin user và password, chọn nút
+đăng nhập > hệ thống sẽ gửi mã xác nhận qua email/ sms
+Tại màn hình gửi mã xác nhận chọn phương thức xác thực > chọn
+nút ‘Đồng ý’
+Hình 3 Gửi mã xác thực
++ Bước 2: Nhập mã xác thực
+11 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Sau khi nhập mã xác thực xong chọn Submit
+Hình 4 Nhập mã xác nhận và gửi đi
+1.2 Tạo máy ảo
+a. Tạo máy ảo trên region miền Bắc
+ Đường dẫn: Chọn Region miền Bắc > Máy ảo > Danh sách máy ảo >
+Thêm mới máy ảo
+ Mô tả chức năng
++ Bước 1: Chọn region miền Bắc:
++ Bước 2: Menu > Máy ảo > Danh sách máy ảo
+Hình 5 Đường dẫn
+12 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Tại màn hình Danh sách máy ảo > Thực hiện chọn nút
+‘Thêm mới máy ảo’
+Hình 6 Tạo máy ảo
++ Bước 4: Tại màn hình tạo máy ảo:
+- Chọn máy ảo:
+Boot từ Volume
+Hình 7 Chọn loại máy ảo
+- Nhập thông tin máy ảo:
+Lưu ý: Tại phần đăng nhập thông tin máy ảo nhập tên máy
+máy ảo có thể tích chọn địa chỉ IP là có hoặc không.
+13 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+Hình 8 Nhập thông tin máy ảo
+- Chọn cấu hình
+Hình 9 Cấu hình
+14 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+- Chọn cấu hình Volume
+Hình 10 Volume
+- Chọn hệ điều hành:
+Lưu ý: hệ điều hành có 2 loại là Window và Linux
++ TH1: Nếu chọn Windows
+Hình 11 Hệ điều hành windows
+15 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ TH2: Nếu chọn Linux: thì sẽ có thêm Keypair
+Hình 12 Hệ điều hành linux
+- Chọn Keypair: cho phép người dùng SHH vào máy chủ linux
+Hình 13 Keypair
+16 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+- Hoàn thành: tại phần hoàn thành: Khách hàng có thể chọn thời
+gian sử dụng là 1; 6; 12 hoặc 24 tháng và khách hàng có thể nhập
+mã ưu đãi sử dụng.
+Hình 14 Hoàn thành
+Lưu ý: nếu khách hàng chưa nạp tiền vào tài khoản thì khách hàng
+phải thực hiện nạp tiền vào khoản trước khi mua máy ảo.
+Nếu khách hàng chưa nạp tiền / số dư không đủ thì hệ thống sẽ có
+cảnh báo yêu cầu nạp tiền
+b. Chức năng tạo máy ảo trên region miền Nam
+ Đường dẫn: Chọn region miền Nam > Menu > Máy ảo > Danh sách
+máy ảo.
+ Mô tả chức năng
+17 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 1: Chọn region Miền Nam
++ Bước 2: Menu > Máy ảo > Danh sách máy ảo
+Hình 15 Đường dẫn
++ Bước 3: Tại màn hình Danh sách máy ảo chọn chọn ‘thêm mới
+máy ảo’
+Hình 16 Tạo máy ảo
+18 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 4: Tại màn hình tạo máy ảo:
+- Chọn loại máy ảo
+Boot từ Volume
+Hình 17 Chọn loại máy ảo
+- Nhập thông tin máy ảo
+Lưu ý: Tại phần thông tin máy ảo nhập tên máy ảo, có thể
+tích chọn địa chỉ IP là có hoặc không
+Hình 18 Nhập thông tin máy ảo
+19 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+- Chọn cấu hình
+Hình 19 Chọn cấu hình
+- Chọn cấu hình Volume
+Hình 20 Thanh kéo vị trí dung lượng volume
+- Chọn hệ điều hành
+Lưu ý: hệ điều hành có 2 loại là Window và Linux
+20 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ TH1: Nếu chọn Window
+Hình 21 Chọn hệ điều hành windows
++ TH2: Nếu chọn là Linux: thì sẽ có thêm phần tạo Keypair
+Hình 22 Chọn hệ điều hành linux
+21 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+- Chọn cấu hình Keypair
+Hình 23 Keypair
+- Hoàn thành: tại phần hoàn thành: Khách hàng có thể chọn thời
+gian sử dụng là 1; 6; 12 hoặc 24 tháng và khách hàng có thể nhập
+mã ưu đãi sử dụng.
+Hình 24 Hoàn thành
+Lưu ý: nếu khách hàng chưa nạp tiền vào tài khoản thì khách
+hàng phải thực hiện nạp tiền vào khoản trước khi mua máy ảo.
+Nếu khách hàng chưa nạp tiền / số dư không đủ thì hệ thống sẽ
+có cảnh báo yêu cầu nạp tiền
+22 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+1.3 Vận hành dịch vụ máy ảo
+1.3.1 Tắt máy ảo
+a. Trên region miền Bắc
+Để thực hiện tắt máy ảo, Khách hàng thực hiện như sau:
+ Đường dẫn: Chọn region miền Bắc > Menu > Máy ảo > Danh sách
+máy ảo
+ Mô tả chức năng
++ Bước 1 : Chọn region miền Bắc > Bên menu trái chọn máy ảo >
+Chọn danh sách máy ảo:
+Hình 25 Đường dẫn
+23 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 2 : Tại phần danh sách máy ảo, chọn tên máy ảo tắt
+Hình 26 Danh sách máy ảo
++ Bước 3: Tại màn hình chi tiết máy ảo > Chọn tắt máy ảo
+Hình 27 Chi tiết máy ảo
+24 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+Sau khi chọn tắt máy ảo, hệ thống sẽ hiển thị popup xác nhận >
+chọn vào ‘có’ để thực hiện tắt máy ảo.
+Hình 28 Tắt máy ảo
+Màn hình sau khi thực hiện tắt máy ảo, trạng thái của máy ảo sẽ
+chuyển sang trạng thái off.
+Hình 29 Trạng thái chuyển thành OFF, tắt máy ảo thành công
+b. Trên region miền Nam
+Để thực hiện tắt máy ảo trên region miền Nam, Khách hàng thực hiện
+như sau:
+25 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+ Đường dẫn: Chọn region miền Nam > Menu > Máy ảo > Danh sách
+máy ảo
+ Mô tả chức năng
++ Bước 1: Chọn region miền Nam bên góc phải > Bên menu trái
+chọn máy ảo > Chọn danh sách máy ảo:
+Hình 30 Đường dẫn
++ Bước 2: Tại phần danh sách máy ảo, chọn tên máy ảo cần tắt
+Hình 31 Danh sách máy ảo
+26 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Tại màn hình chi tiết máy ảo > Chọn tắt máy ảo
+Hình 32 Chi tiết máy ảo
+Sau khi chọn tắt máy ảo, hệ thống sẽ hiện thị popup xác nhận > chọn
+vào ‘có’ để thực hiện tắt máy ảo.
+Hình 33 Tiến hành tắt máy ảo
+27 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+Màn hình sau khi thực hiện tắt máy ảo, trạng thái của máy ảo sẽ
+chuyển sang trạng thái off
+Hình 34 Trạng thái chuyển thành OFF, tắt máy ảo thành công
+1.3.2 Bật máy ảo
+a. Trên region miền Bắc
+Để thực hiện bật máy ảo trên region miền Bắc, Khách hàng thực hiện
+như sau:
+ Đường dẫn: Chọn region miền Bắc > Menu > Máy ảo > Danh sách
+máy ảo
+ Mô tả chức năng
+28 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 1: Chọn region miền Bắc bên góc phải > Bên menu trái
+chọn máy ảo > Chọn danh sách máy ảo:
+Hình 35 Đường dẫn
++ Bước 2: Tại phần danh sách máy ảo, chọn tên máy ảo cần bật
+Hình 36 Chi tiết máy ảo
+29 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Tại màn hình chi tiết máy ảo > Chọn bật máy ảo
+Hình 37 Chi tiết máy ảo
+Sau khi chọn bật máy ảo, hệ thống sẽ hiện thị popup xác nhận >
+chọn vào ‘có’ để thực hiện tắt máy ảo.
+Hình 38 Bật máy ảo
+Màn hình sau khi thực hiện bật máy ảo, trạng thái của máy ảo
+sẽ chuyển sang trạng thái online
+30 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+b. Trên region miền Nam
+Để thực hiện bật máy ảo trên region miền Nam, Khách hàng thực hiện
+như sau:
+ Đường dẫn: Chọn region miền Nam > Menu > Máy ảo > Danh sách
+máy ảo
+ Mô tả chức năng
++ Bước 1: Chọn region miền Nam bên góc phải > Bên menu trái
+chọn máy ảo > Chọn danh sách máy ảo:
+Hình 39 Đường dẫn
++ Bước 2: Tại phần danh sách máy ảo, chọn tên máy ảo cần tắt
+Hình 40 Danh sách máy ảo
+31 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Tại màn hình chi tiết máy ảo > Chọn bật máy ảo
+Hình 41 Chọn nút ‘Bật máy ảo’
+Sau khi chọn bật máy ảo, hệ thống sẽ hiện thị popup xác nhận >
+chọn vào ‘có’ để thực hiện tắt máy ảo.
+Hình 42 Bật máy ảo
+32 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+Màn hình sau khi thực hiện bật máy ảo, trạng thái của máy ảo sẽ
+chuyển sang trạng thái online
+Hình 43 Trạng thái hiển thị Online bật máy ảo thành công
+1.3.3 Khởi động lại máy ảo
+a. Trên region miền Bắc
+Để thực hiện khởi động lại máy ảo trên region miền Bắc, Khách hàng
+thực hiện như sau:
+ Đường dẫn: Chọn region miền Bắc > Menu > Máy ảo > Danh sách
+máy ảo
+ Mô tả chức năng
+33 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 1: Chọn region miền Bắc bên góc phải > Bên menu trái
+chọn máy ảo > Chọn danh sách máy ảo:
+Hình 44 Chọn Region, tại mục máy ảo chọn Danh sách máy ảo
++ Bước 2: Tại phần danh sách máy ảo, chọn tên máy ảo cần khởi
+động lại
+Hình 45 Chọn tên máy ảo cần khởi động lại
+34 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Tại màn hình chi tiết máy ảo > Chọn khởi động lại
+máy ảo
+Hình 46 Chi tiết máy ảo
+Sau khi chọn khởi động lại máy ảo, hệ thống sẽ hiện thị popup
+xác nhận > chọn vào ‘có’ để thực hiện khởi động lại máy ảo.
+Hình 47 Chọn có để khởi động lại máy ảo
+35 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+Màn hình sau khi thực hiện khởi động lại máy ảo
+Hình 48 Màn hình sau khi khởi động lại máy ảo
+b. Trên region miền Nam
+Để thực hiện khởi động lại máy ảo trên region miền Nam, Khách hàng thực
+hiện như sau:
+ Đường dẫn: Chọn region miền Nam > Menu > Máy ảo > Danh sách máy ảo
+ Mô tả chức năng
+36 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 1: Chọn region miền Nam bên góc phải > Bên menu trái
+chọn máy ảo > Chọn danh sách máy ảo:
+Hình 49 Đường dẫn
++ Bước 2: Tại phần danh sách máy ảo, chọn tên máy ảo cần khởi
+động lại
+Hình 50 Danh sách máy ảo
+37 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Tại màn hình chi tiết máy ảo > Chọn khởi động lại
+máy ảo
+Hình 51 Chi tiết máy ảo
+Sau khi chọn khởi động lại máy ảo, hệ thống sẽ hiện thị popup xác
+nhận > chọn vào ‘có’ để thực hiện khởi động lại máy ảo.
+Hình 52 Khởi động lại máy ảo
+38 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+Màn hình sau khi thực hiện khởi động lại máy ảo
+Hình 53 Màn hình sau khi khởi động lại máy ảo
+1.3.4 Kết nối console vào giao diện máy ảo
+a. Trên Region miền Bắc
+Để thực hiện kết nối các giao diện máy ảo, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Bắc > Máy ảo > Danh sách máy ảo
+ Mô tả chức năng
++ Bước 1 : Chọn Region miền Bắc bên góc phải > Bên menu trái
+chọn máy ảo > Chọn danh sách máy ảo
+Hình 54 Đường dẫn
+39 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 2: Tại phần danh sách máy ảo, chọn tên máy ảo cần kết
+nối console
+Hình 55 Chọn tên máy ảo kết nối console
++ Bước 3: Tại màn hình chi tiết máy ảo > Chọn VNC
+Hình 56 Chi tiết máy ảo
+40 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 4: Tại màn hình VNC chọn nút Send CtrlAltDel
+Hình 57 Tại màn hình VNC chọn ‘send CtrlAltDel’
++ Bước 5: Thực hiện đăng nhập vào máy
+Hình 58 Màn hình kết nối console
+b. Trên Region miền Nam
+Để thực hiện kết nối vào giao diện máy ảo, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Nam > Máy ảo > Danh sách máy ảo
+ Mô tả chức năng
+41 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 1: Chọn Region miền Nam > Bên menu trái chọn máy ảo >
+Chọn danh sách máy ảo
+Hình 59 Đường dẫn
++ Bước 2: Tại phần danh sách máy ảo ,chọn tên máy ảo cần kết nối
+console
+Hình 60 Danh sách máy ảo
+42 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Tại màn hình chi tiết máy ảo > Chọn VNC
+Hình 61 Chi tiết máy ảo
++ Bước 4: Tại màn hình VNC chọn nút Send CtrlAltDel
+Hình 62 Đã kết nối với QEMU và tiến hành đăng nhập
+43 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 5: Thực hiện đăng nhập vào máy
+Hình 63 Đăng nhập vào máy
+1.3.5 Xem performance máy ảo
+a. Trên region miền Bắc
+Để thực hiện xem performance máy ảo, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Bắc > Máy ảo > Danh sách máy ảo
+ Mô tả chức năng
++ Bước 1: Chọn region miền Bắc > Bên menu trái chọn máy ảo >
+Chọn danh sách máy ảo
+Hình 64 Đường dẫn
+44 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 2: Tại phần danh sách máy ảo, chọn tên máy ảo
+Hình 65 Danh sách máy ảo
++ Bước 3: Tại màn hình chi tiết máy ảo > Chọn giám sát
+Hình 66 Chi tiết máy ảo
+45 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 4: Màn hình hiển thị biểu đồ chi tiết giám sát máy ảo
+Hình 67 Biểu đồ tải CPU
+b. Trên Region miền Nam
+Để thực hiện xem performance máy ảo, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Nam > Máy ảo > Danh sách máy ảo
+ Mô tả chức năng
++ Bước 1: Chọn Region miền Nam > Bên menu trái chọn máy ảo
+> Chọn Danh sách máy ảo:
+Hình 68 Đường dẫn
+46 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 2: Tại phần Danh sách máy ảo, chọn tên máy ảo cần kết
+nối console
+Hình 69 Danh sách máy ảo
++ Bước 3: Tại màn hình chi tiết máy ảo > Chọn Giám sát máy ảo
+Hình 70 Chi tiết máy ảo
+47 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 4: Màn hình hiển thị biểu đồ chi tiết giám sát máy ảo
+Hình 71 Biểu đồ tải CPU
+1.3.6 Điều chỉnh gói cấu hình
+a. Trên Region miền Bắc
+Để thực hiện xem điều chỉnh gói cấu hình máy ảo, khách hàng thực hiện
+như sau:
+ Đường dẫn: Chọn Region miền Bắc > Máy ảo > Danh sách máy ảo
+ Mô tả chức năng
++ Bước 1: Chọn Region miền Bắc > Bên menu trái chọn máy ảo >
+Chọn danh sách máy ảo
+Hình 72 Đường dẫn
+48 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 2: Tại màn hình danh sách máy ảo: chọn Nâng cấp gói cấu hình
+Hình 73 Danh sách máy ảo
++ Bước 3: Chọn gói cấu hình cao hơn
+Hình 74 Thay đổi gói cấu hình cao hơn
+49 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 4: Chọn Hoàn thành: tại màn hình hoàn thành khách hàng có
+thể chọn thời gian sử dụng mong muốn > chọn vào nút ‘Hoàn thành’
+Hình 75 Chọn nút ‘Hoàn thành’
+b. Trên Region miền Nam
+Để thực hiện xem điều chỉnh gói cấu hình máy ảo, khách hàng thực hiện
+như sau:
+ Đường dẫn: Chọn Region miền Nam > Máy ảo > Danh sách máy ảo
+ Mô tả chức năng
++ Bước 1: Chọn Region miền Nam > Bên menu trái chọn máy ảo >
+Chọn danh sách máy ảo:
+Hình 76 Đường dẫn
+50 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 2: Tại màn hình danh sách máy ảo: chọn Nâng cấp gói cấu
+hình
+Hình 77 Danh sách máy ảo
++ Bước 3: Chọn gói cấu hình cao hơn
+Hình 78 Thay đổi gói cấu hình cao hơn
+51 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 4: Chọn Hoàn thành: tại mục hoàn thành khách hàng có
+thể chọn thời gian sử dụng mong muốn > chọn vào nút ‘Hoàn
+thành’
+Hình 79 Hoàn thành
+1.3.7 Thay đổi tên máy ảo
+a. Trên Region miền Bắc
+Để thực hiện thay đổi máy ảo, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Bắc > Máy ảo > Danh sách máy ảo
+ Mô tả chức năng
+52 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 1: Chọn Region miền Bắc > Bên menu trái chọn máy ảo >
+Chọn danh sách máy ảo
+Hình 80 Đường dẫn
++ Bước 2: Tại màn hình máy ảo chọn Cập nhật tên máy ảo
+Hình 81 Danh sách máy ảo
+53 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Nhập tên máy ảo cần sửa
++ Bước 4: Chọn lưu thông tin
+Hình 82 Cập nhật máy ảo
+Màn hình sau khi lưu thông tin
+Hình 83 Thông tin máy ảo cập nhật thành công
+b. Trên Region miền Nam
+Để thực hiện thay đổi máy ảo, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Nam > Máy ảo > Danh sách máy ảo
+ Mô tả chức năng
+54 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 1: Chọn Region miền Nam > Bên menu trái chọn máy ảo
+> Chọn Danh sách máy ảo
+Hình 84 Đường dẫn
++ Bước 2: Tại màn hình máy ảo chọn Cập nhật tên máy ảo
+Hình 85 Danh sách máy ảo
+55 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Nhập tên máy ảo cần sửa
++ Bước 4: Chọn lưu thông tin
+Hình 86 Cập nhật máy ảo
+Màn hình sau khi lưu thông tin
+Hình 87 Thông tin máy ảo cập nhật thành công
+1.4 Nâng cấp máy ảo
+a. Trên Region miền Bắc
+Để thực hiện nâng cấp máy ảo, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Bắc > Máy ảo > Danh sách máy ảo
+56 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+ Mô tả chức năng
++ Bước 1: Bên menu trái chọn máy ảo > Chọn Danh sách máy ảo
+Hình 88 Đường dẫn
++ Bước 2: Tại màn hình danh sách máy ảo: chọn Nâng cấp cấu
+hình
+Hình 89 Danh sách máy ảo
+57 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Thực hiện: Thay đổi RAM, thay đổi số vCPU
++ Bước 4: Chọn nút ‘Thực hiện nâng cấp’
+Sau khi nâng cấp máy ảo hệ thống tự động trừ phí của khách
+hàng
+Hình 90 Nâng cấp cấu hình máy ảo
+b. Trên Region miền Nam
+Để thực hiện nâng cấp máy ảo, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Nam > Máy ảo > Danh sách máy ảo
+ Mô tả chức năng
+58 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 1: Chọn Region miền Nam bên góc phải > Bên menu trái
+chọn máy ảo > Chọn Danh sách máy ảo
+Hình 91 Đường dẫn
++ Bước 2: Tại màn hình danh sách máy ảo: Nâng cấp cấu hình
+Hình 92 Danh sách máy ảo
+59 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Thực hiện thay đổi RAM, thay đổi số vCPU
++ Bước 4: Chọn nút ‘Thực hiện nâng cấp’
+Hình 93 Nâng cấp cấu hình máy ảo
+Sau khi nâng cấp máy ảo hệ thống tự dộng trừ phí của khách hàng
+1.5 Giám sát hiệu năng máy ảo
+a. Trên Region miền Bắc
+Để thực hiện giám sát hiệu năng máy ảo, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Bắc > Máy ảo > Danh sách máy ảo
+ Mô tả chức năng
+60 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 1: Chọn Region miền Bắc > Bên menu trái chọn máy ảo >
+Chọn Danh sách máy ảo
+Hình 94 Đường dẫn
++ Bước 2: Tại màn hình danh sách máy ảo > Chọn tên máy ảo
+Hình 95 Danh sách máy ảo
+61 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Tại màn hình chi tiết máy ảo chọn ‘Nhận hiệu năng máy ảo’
+Hình 96 Chi tiết máy ảo
++ Bước 4: Thiết lập ngưỡng cảnh báo : nhập các thông số cảnh báo
+CPU và RAM
++ Bước 5: Chọn nút ‘Lưu thông tin’
+Hình 97 Thiết lập ngưỡng cảnh báo
+b. Trên Region miền Nam
+Để thực hiện giám sát hiệu năng máy ảo, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Nam > Chọn menu bên góc trái > Chọn
+Máy ảo > Danh sách Máy ảo
+62 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+ Mô tả chức năng
++ Bước 1: Chọn Region miền Nam > Bên menu trái chọn máy ảo >
+Chọn Danh sách máy ảo
+Hình 98 Đường dẫn
++ Bước 2: Tại màn hình danh sách máy ảo > Chọn tên máy ảo
+Hình 99 Danh sách máy ảo
+63 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Tại màn hình chi tiết máy ảo chọn ‘Nhận hiệu năng máy ảo’
+Hình 100 Chi tiết máy ảo
++ Bước 4: Thiết lập ngưỡng cảnh báo : nhập các thông số cảnh báo
+CPU và RAM
++ Bước 5: Chọn ‘Lưu thông tin’
+Hình 101 Thiết lập ngưỡng cảnh báo
+2. Vận hành dịch vụ lưu trữ (Volume)
+2.1 Đăng nhập thông tin tài khoản
+64 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+a. Trên Region miền Bắc
+Để thực hiện tạo mới volume, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Bắc > Chọn menu bên góc trái > Chọn
+Volume > Danh sách Volume > Thêm volume
+ Mô tả chức năng
++ Bước 1: Chọn region miền Bắc > Chọn menu bên góc trái > Chọn
+volume > Chọn > Chọn Danh sách volume
+Hình 102 Đường dẫn
++ Bước 2: Tại màn hình Danh sách máy ảo > thực hiện chọn nút
+‘Thêm volume’
+Hình 103 Tại màn hình danh sách volume, chọn ‘Thêm volume’
+65 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Nhập thông tin tạo mới volume
+a) Chọn 1 tên máy ảo trong danh sách máy ảo dùng để gắn
+vào volume
+b) 2 loại volume là SSD và HD
+c) Kéo thay đổi chỉ số dung lượng mua thêm và số tháng sử
+dụng
++ Bước 4: Chọn nút tạo volume
+Hình 104 Tạo mới volume
+b. Trên Region miền Nam
+Để thực hiện tạo mới volume, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Nam > Chọn menu bên góc trái >
+Chọn Volume > Danh sách Volume > Thêm volume
+ Mô tả chức năng
++ Bước 1: Chọn region miền Nam > Chọn menu góc bên trái >
+Chọn Volume > Chọn Danh sách Volume
+66 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+Hình 105 Đường dẫn
++ Bước 2: Tại màn hình danh sách volume, chọn thêm volume để
+tạo mới volume
+Hình 106 Tại danh sách volume, chọn ‘Thêm volume’
+67 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Nhập thông tin tạo mới
+a) Chọn 1 tên máy ảo trong danh sách máy ảo dùng để gắn
+vào volume
+b) 2 loại volume là SSD và HD
+c) Kéo thay đổi chỉ số dung lượng mua thêm và số tháng sử
+dụng
++ Bước 4: Chọn nút tạo Volume
+Hình 107 Tạo mới volume
++ Bước 5: Hiển thị màn hình khi tạo volume mới
+Hình 108 Màn hình hiển thị khi tạo volume mới
+68 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+2.2 Chỉnh sửa thông tin Volume
+a. Trên Region miền Bắc
+Để thực hiện chỉnh sửa thông tin volume, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Bắc > Chọn menu bên góc trái > Chọn
+Volume > Danh sách Volume
+ Mô tả chức năng
++ Bước 1: chọn Region miền Bắc > Chọn menu bên góc trái >
+Chọn Volume > Danh sách Volume
+Hình 109 Đường dẫn
++ Bước 2: tại màn hình danh sách Volume > Chọn tên Volume
+cần chỉnh sửa > chọn chọn nút ‘sửa’
+Hình 110 Danh sách volume
+69 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Thay đổi tên Volume
++ Bước 4: Chọn nút ‘Sửa volume’
+Hình 111 Sửa volume
+b. Trên Region miền Nam
+Để thực hiện chỉnh sửa thông tin volume, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Nam > Chọn menu bên góc trái > Chọn
+Volume > Danh sách Volume
+ Mô tả chức năng
++ Bước 1: chọn Region miền Nam > Chọn menu bên góc trái >
+Chọn Volume > Danh sách Volume
+Hình 112 Đường dẫn
+70 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 2: tại màn hình danh sách Volume > Chọn tên Volume cần
+chỉnh sửa > chọn chọn nút ‘sửa’
+Hình 113 Danh sách volume
++ Bước 3: Thay đổi tên Volume
++ Bước 4: Chọn nút ‘Sửa volume’
+Hình 114 Sửa volume
+2.3 Gắn/ gỡ volume với máy ảo
+2.3.1 Gỡ volume với máy ảo
+a. Trên Region miền Bắc
+Để thực hiện gỡ volume trên region miền Bắc, khách hàng thực hiện
+như sau:
+71 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+ Đường dẫn: Chọn Region miền Bắc > Chọn menu bên góc trái > Chọn
+Volume > Danh sách Volume
+ Mô tả chức năng
++ Bước 1: chọn Region miền Bắc > Chọn menu bên góc trái >
+Chọn Volume > Chọn Danh sách Volume
+Hình 115 Đường dẫn
++ Bước 2: Tại màn hình Danh sách Volume > Chọn tên Volume
+muốn thực hiện gỡ với máy ảo > chọn nút ‘Gỡ’
+Hình 116 Danh sách máy ảo
+72 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: hiện thông tin volume, chọn nút ‘gỡ Volume’
+Hình 117 Gỡ volume khỏi máy ảo
+b. Trên Region miền Nam
+Để thực hiện gỡ volume trên region miền Nam, khách hàng thực hiện như
+sau:
+ Đường dẫn: Chọn Region miền Nam > Chọn menu bên góc trái > Chọn
+Volume > Danh sách Volume
+ Mô tả chức năng
++ Bước 1: chọn Region miền Nam > Chọn menu bên góc trái >
+Chọn Volume > Chọn Danh sách Volume
+Hình 118 Đường dẫn
+73 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 2: Tại màn hình Danh sách Volume > Chọn tên Volume
+muốn thực hiện gỡ máy ảo > chọn nút ‘Gỡ’
+Hình 119 Danh sách volume
++ Bước 3: hiện thông tin volume, chọn nút ‘Gỡ Volume’
+Hình 120 Gỡ volume khỏi máy ảo
+2.3.2 Gắn volume với máy ảo
+a. Trên Region miền Bắc
+Để thực hiện việc gắn cho máy ảo, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Bắc > Chọn menu bên góc trái > Chọn
+Volume > Danh sách Volume
+74 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+ Mô tả chức năng
++ Bước 1: Chọn Region miền Bắc > Chọn menu bên góc trái >
+Chọn Volume > Danh sách Volume
+Hình 121 Đường dẫn
++ Bước 2: Tại màn hình Danh sách Volume, chọn tên volume
+muốn gắn cho máy ảo > Chọn nút ‘Gán cho’
+Hình 122 Danh sách volume
+75 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Chọn Danh sách máy ảo > Chọn nút ‘Gán Volume’
+Hình 123 Gán volume cho máy ảo
+b. Trên Region miền Nam
+Để thực hiện việc gắn cho máy ảo, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Nam> Chọn menu bên góc trái > Chọn
+Volume > Danh sách Volume
+ Mô tả chức năng
++ Bước 1: Chọn Region miền Nam > Chọn menu bên góc trái >
+Chọn Volume > Danh sách Volume
+Hình 124 Đường dẫn
+76 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 2: Tại màn hình Danh sách Volume, chọn tên volume
+muốn gắn cho máy ảo > Chọn nút ‘Gán cho’
+Hình 125 Danh sách volume
++ Bước 3: Chọn Danh sách máy ảo > Chọn nút ‘Gán Volume’
+Hình 126 Gán volume cho máy ảo
+2.4 Xóa volume
+a. Trên Region miền Bắc
+Để thực hiện xóa volume, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Bắc > Chọn menu bên góc trái > Chọn
+Volume > Danh sách Volume
+77 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+ Mô tả chức năng
++ Bước 1: chọn Region miền Bắc > Chọn menu bên góc trái >
+Chọn volume > Danh sách volume
+Hình 127 Đường dẫn
++ Bước 2: Tại màn hình Danh sách volume, Chọn nút ‘Xóa’
+Hình 128 Danh sách volume
+78 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Chọn nút ‘Đồng ý’ để xóa volume
+Hình 129 Xóa volume
+b. Trên Region miền Nam
+Để thực hiện xóa volume, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Nam> Chọn menu bên góc trái > Chọn
+Volume > Danh sách Volume
+ Mô tả chức năng
++ Bước 1: chọn Region miền Nam > Chọn menu bên góc trái >
+Chọn volume > Danh sách volume
+Hình 130 Đường dẫn
+79 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 2: Tại màn hình Danh sách volume , chọn nút ‘Xóa’
+Hình 131 Danh sách volume
++ Bước 3: Chọn nút ‘Đồng ý’
+Hình 132 Xóa volume
+80 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+Nếu volume chưa được gỡ với máy ảo sẽ không thực hiện được và
+hiện yêu cầu gỡ trước khi xóa, khách hàng thực hiện gỡ volume
+Hình 133 Xóa volume báo lỗi khi chưa gỡ máy ảo
+Thực hiện gỡ như các bước ở 2.3.1 rồi thao tác xóa volume
+3. Vận hành dịch vụ Cloud Storage
+3.1 Tạo backup bucket
+a. Trên Region miền Bắc
+Để thực hiện việc tạo backup bucket, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Bắc > Chọn menu bên góc trái > Chọn
+Backup bucket > Chọn Quản lý Backup bucket
+ Mô tả chức năng
++ Bước 1: Chọn Region miền Bắc > Chọn menu góc trái > Chọn
+Backup Bucket > Chọn Quản lý Backup Bucket
+81 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+Hình 134 Đường dẫn
++ Bước 2: Tại màn hình Quản lý Backup Bucket, chọn Thêm
+Backup Bucket
+Hình 135 Tạo mới backup bucket
+82 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Nhập thông tin tên backup bucket, di chuyển thanh
+trượt đến vị trí tháng sử dụng, dung lượng, Giới hạn thư mục,
+File trong container mong muốn
++ Bước 4: Sau khi thực hiện thao táo xong, chọn nút ‘Tiến hành
+thanh toán’
+Hình 136 Tạo backup bucket và tiến hành thanh toán
++ Bước 5: Chọn nút ‘Đồng ý’ để thực hiện việc tạo Backup bucket
+Hình 137 Thực hiện mua backup bucket
+83 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+b. Trên Region miền Nam
+Để thực hiện tạo Backup bucket, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Nam > Chọn menu bên góc trái > Chọn
+Backup Bucket > Quản lý Backup bucket
+ Mô tả chức năng
++ Bước 1: Chọn Region miền Nam > Chọn menu góc trái > Chọn
+Backup Bucket > Chọn Quản lý Backup Bucket
+Hình 138 Đường dẫn
++ Bước 2: Tại màn hình Quản lý Backup Bucket, chọn Thêm
+Backup Bucket
+Hình 139 Danh sách Backup bucket chọn ‘Thêm backup bucket’
+84 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Nhập thông tin tên backup bucket, di chuyển thanh
+trượt đến vị trí tháng sử dụng, dung lượng, Giới hạn thư mục,
+File trong container mong muốn
++ Bước 4: Sau khi thực hiện thao táo xong, chọn nút ‘Tiến hành
+thanh toán’
+Hình 140 Nhập thông tin backup bucket và tiến hành thanh toán
++ Bước 5: Chọn nút ‘Đồng ý’ để thực hiện việc tạo Backup bucket
+Hình 141 Thực hiện mua backup bucket
+3.2 Sửa thông tin backup bucket
+a. Trên Region miền Bắc
+Để thực hiện sửa thông tin backup bucket, khách hàng thực hiện như sau:
+85 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+ Đường dẫn: Chọn Region miền Bắc > Chọn menu bên góc trái > Chọn
+Backup Bucket > Quản lý Backup bucket
+ Mô tả chức năng
++ Bước 1: Chọn Region miền Bắc > Chọn menu bên trái > Chọn
+Backup bucket > Chọn Quản lý Backup Bucket
+Hình 142 Đường dẫn
++ Bước 2: Tại màn hình Quản lý Backup bucket , chọn tên Backup
+bucket muốn chỉnh sửa > chọn nút ‘Sửa’
+Hình 143 Sửa volume
+86 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Cho phép đưa các email có quyền truy cập vào các đối
+tượng của bạn trong vùng chứa, chọn nút ‘Lưu thông tin’
+Hình 144 Cập nhật Backup bucket
+b. Trên Region miền Nam
+Để thực hiện thông tin backup bucket, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Nam > Chọn menu bên góc trái > Chọn
+Backup Bucket > Quản lý Backup bucket
+ Mô tả chức năng
+87 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 1: Chọn Region miền Nam > Chọn menu bên góc trái >
+Chọn Backup bucket > Chọn Quan lý Backup bucket
+Hình 145 Đường dẫn
++ Bước 2: Tại màn hình Quản lý Backup bucket, chọn tên Backup
+bucket muốn chỉnh sửa > Chọn nút ‘Sửa’
+Hình 146 Sửa volume
+88 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Cho phép đưa các email có quyền truy cập vào các đối
+tượng của bạn trong vùng chứa, chọn nút ‘Lưu thông tin’
+Hình 147 Cập nhật backup bucket
+3.3 Xóa Backup bucket
+a. Trên Region miền Bắc
+Để thực hiện xóa Backup Bucket, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Bắc > Thanh menu bên góc trái >
+Chọn Backup Bucket > Chọn Quản lý Backup Bucket
+ Mô tả chức năng
+89 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 1: Chọn Region miền Bắc > Thanh menu bên góc trái >
+Chọn Backup Bucket > Chọn Quản lý Backup Bucket
+Hình 148 Đường dẫn
++ Bước 2: Tại màn hình Quản lý Backup Bucket, chọn tên Backup
+Bucket muốn xóa > Chọn nút ‘Xóa’
+Hình 149 Tại Danh sách backup bucket, chọn xóa voume
+90 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Xác nhận xóa Backup Bucket > Chọn nút ‘Đồng ý’
+Hình 150 Xác nhận xóa Backup bucket
+b. Trên Region miền Nam
+Để thực hiện xóa Backup Bucket, khách hàng thực hiện như sau:
+ Đường dẫn: Chọn Region miền Nam > Thanh menu bên góc trái > Chọn
+Backup Bucket > Chọn Quản lý Backup Bucket
+ Mô tả chức năng
++ Bước 1: Chọn Region miền Nam > Thanh menu bên góc trái >
+Chọn Backup Bucket > Chọn Quản lý Backup Bucket
+Hình 151 Đường dẫn
+91 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 2: Tại màn hình Quản lý Backup Bucket, chọn tên Backup
+Bucket muốn xóa > Chọn nút ‘Xóa’
+Hình 152 Tại danh sách Backup bucket, xóa volume
++ Bước 3: Xác nhận xóa Backup Bucket > Chọn nút ‘Đồng ý’
+Hình 153 Xác nhận xóa Backup bucket
+3.4 Xác thực, cấp phép đọc ghi back bucket
+a. Trên Region miền Bắc
+Để thực hiện xác thực và cấp phép đọc ghi backup bucket, Khách hàng
+thực hiện như sau:
+ Đường dẫn: Chọn Region miền Bắc > Thanh menu bên góc trái > Chọn
+Backup Bucket > Chọn Quản lý Backup Bucket
+92 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
+ Mô tả chức năng
++ Bước 1: Chọn Region miền Bắc > Chọn thanh menu bên góc trái
+> Chọn Backup Bucket > Chọn Quản lý Backup Bucket
+Hình 154 Đường dẫn
++ Bước 2: Tại màn hình Quản lý Backup Bucket > Chọn nút ‘Sửa’
+Hình 155 Danh sách Backup bucket
+93 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Cập nhật thông tin chọn nút tích để cho phép đọc ghi và
+chỉ có người được gắn email là được phép truy cập và đọc ghi
+backup bucket
++ Bước 4: Chọn nút ‘Lưu thông tin’
+Hình 156 Cập nhật Backup Bucket
+b. Trên Region miền Nam
+Để thực hiện xác thực và cấp phép đọc ghi backup bucket, Khách hàng thực
+hiện như sau:
+ Đường dẫn: Chọn Region miền Nam > Thanh menu bên góc trái > Chọn
+Backup Bucket > Chọn Quản lý Backup Bucket
+ Mô tả chức năng
+94 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 1: Chọn Region miền Nam > Chọn thanh menu bên góc
+trái > Chọn Backup Bucket > Chọn Quản lý Backup Bucket
+Hình 157 Đường dẫn
++ Bước 2: Tại màn hình Quản lý Backup Bucket > Chọn nút ‘Sửa’
+Hình 158 Tại Danh sách volume, chọn sửa volume
+95 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Cập nhật thông tin chọn nút ở ô vuông để cho phép đọc ghi
+và chỉ có người được gắn email là được phép truy cập và đọc ghi
+backup bucket
++ Bước 4: Chọn nút ‘Lưu thông tin’
+Hình 159 Cập nhật Backup bucket
+4. Quản lý thanh toán
+4.4 Quản lý lịch nạp tiền
+Để thực hiện kiểm tra lịch sử nạp tiền, khách hàng thực hiện như sau:
+ Đường dẫn: Thanh menu bên góc trái > Chọn Thanh toán > Chọn lịch
+sử nạp tiền
+ Mô tả chức năng
+96 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 1: Thanh menu bên góc trái > Chọn Thanh toán > Chọn
+lịch sử nạp tiền
+Hình 160 Đường dẫn
++ Bước 2: Tại màn hình hiển thị danh sách lịch sử nạp tiền thành công
+Hình 161 Lịch sử nạp tiền thành công
+4.5 Nạp tiền vào tài khoản khách hàng
+Để thực hiện nạp tiền cho khách hàng, thực hiện như sau:
+ Đường dẫn: Thanh menu bên góc trái > Chọn Máy ảo > Chọn Tạo
+máy ảo cho khách hàng
+ Mô tả chức năng
+97 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 1: Thanh menu bên góc trái > Chọn máy ảo > Chọn Tạo
+máy ảo cho khách hàng
+Hình 162 Đường dẫn
++ Bước 2: Tại màn hình Tìm kiếm khách hàng > Nhập email khách
+hàng > chọn nút ‘Kiểm tra’
+Hình 163 Tìm kiếm khách hàng
+98 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 3: Tại màn hình thông tin khách hàng > Chọn nút chọn ‘Nạp tiền’
+Hình 164 Thông tin khách hàng, chọn ‘nạp tiền’
++ Bước 4: Nhập số tiền thanh toán, chọn ngân hàng thanh toán >
+chọn nút ‘Thanh Toán’
+Hình 165 Nạp tiền thanh toán dịch vụ
+99 | P a ge
+Tài liệu hướng dẫn sử dụng
+– Portal Cloud
++ Bước 5: Nhập thông tin thanh toán ngân hàng, chọn nút ‘Tiếp tục’
+Hình 166 Thông tin đơn hàng và hình thức thanh toán
++ Bước 6: Sau khi thanh toán thành công, thông báo thanh toán
+thành công sẽ được gửi về email
+Hình 167 Thông báo thanh toán thành công
+100 | P a ge

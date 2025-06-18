@@ -1,0 +1,1108 @@
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+[Exception]
+list index out of range
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 12, in <module>
+    file_path = Path(sys.argv[1])
+IndexError: list index out of range
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+[Exception]
+list index out of range
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 12, in <module>
+    file_path = Path(sys.argv[1])
+IndexError: list index out of range
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\1HItyUEivphPXV5XyNHG9CW5u-r6ohyH6n8A-HBs0R1w
+Extension: 
+Saved to: E:\VHC\cloudserver\data\text\extracted\1HItyUEivphPXV5XyNHG9CW5u-r6ohyH6n8A-HBs0R1w.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_3.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_3.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_3.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_3.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\1HItyUEivphPXV5XyNHG9CW5u-r6ohyH6n8A-HBs0R1w
+Extension: 
+Saved to: E:\VHC\cloudserver\data\text\extracted\1HItyUEivphPXV5XyNHG9CW5u-r6ohyH6n8A-HBs0R1w.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_3.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_3.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_3.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\1HItyUEivphPXV5XyNHG9CW5u-r6ohyH6n8A-HBs0R1w
+Extension: 
+Saved to: E:\VHC\cloudserver\data\text\extracted\1HItyUEivphPXV5XyNHG9CW5u-r6ohyH6n8A-HBs0R1w.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_3.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_3.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_3.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\1HItyUEivphPXV5XyNHG9CW5u-r6ohyH6n8A-HBs0R1w
+Extension: 
+Saved to: E:\VHC\cloudserver\data\text\extracted\1HItyUEivphPXV5XyNHG9CW5u-r6ohyH6n8A-HBs0R1w.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_3.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_3.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_3.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.pdf
+Extension: .pdf
+[Exception]
+No /Root object! - Is this really a PDF?
+Traceback (most recent call last):
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 50, in __init__
+    self.doc = PDFDocument(PDFParser(stream), password=password or "")
+  File "E:\VHC\.venv\lib\site-packages\pdfminer\pdfdocument.py", line 752, in __init__
+    raise PDFSyntaxError("No /Root object! - Is this really a PDF?")
+pdfminer.pdfparser.PDFSyntaxError: No /Root object! - Is this really a PDF?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 28, in <module>
+    with pdfplumber.open(file_path) as pdf:
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 107, in open
+    return cls(
+  File "E:\VHC\.venv\lib\site-packages\pdfplumber\pdf.py", line 52, in __init__
+    raise PdfminerException(e)
+pdfplumber.utils.exceptions.PdfminerException: No /Root object! - Is this really a PDF?
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extension: .pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+Extension: .docx
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_2.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+Extension: .docx
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_2.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+Extension: .docx
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_2.txt
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+[Exception]
+name 'extract_text' is not defined
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in <module>
+    text = extract_text(file_path)
+NameError: name 'extract_text' is not defined
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+[Exception]
+name 'extract_text' is not defined
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in <module>
+    text = extract_text(file_path)
+NameError: name 'extract_text' is not defined
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+[Exception]
+name 'extract_text' is not defined
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in <module>
+    text = extract_text(file_path)
+NameError: name 'extract_text' is not defined
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+[Exception]
+name 'extract_text' is not defined
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in <module>
+    text = extract_text(file_path)
+NameError: name 'extract_text' is not defined
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+[Exception]
+name 'text' is not defined
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 30, in <module>
+    f.write(text)
+NameError: name 'text' is not defined
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+[Exception]
+name 'text' is not defined
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 30, in <module>
+    f.write(text)
+NameError: name 'text' is not defined
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+[Exception]
+name 'text' is not defined
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 30, in <module>
+    f.write(text)
+NameError: name 'text' is not defined
+
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extension: .pdf
+[Exception]
+name 'text' is not defined
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 30, in <module>
+    f.write(text)
+NameError: name 'text' is not defined
+
+=== Script Started ===
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extracted 1227 characters from E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extracted 1227 characters from E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extracted 48880 characters from E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+Extracted 13607 characters from E:\VHC\cloudserver\data\drive\raw\file_2.docx
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_2.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extracted 1227 characters from E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extracted 48880 characters from E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extracted 1227 characters from E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extracted 48880 characters from E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extracted 1227 characters from E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extracted 48880 characters from E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extracted 1227 characters from E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extracted 48880 characters from E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+[Exception]
+No module named 'docx'
+Traceback (most recent call last):
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 76, in <module>
+    text = extract_text(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 51, in extract_text
+    return extract_text_from_docx(file_path)
+  File "E:\VHC\cloudserver\scripts\extract_text.py", line 26, in extract_text_from_docx
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extracted 1227 characters from E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extracted 48880 characters from E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+Extracted 13607 characters from E:\VHC\cloudserver\data\drive\raw\file_2.docx
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_2.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+Extracted 25550 characters from E:\VHC\cloudserver\data\drive\raw\file_2.docx
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_2.txt
+[Cleaned] Saved to: E:\VHC\cloudserver\data\text\cleaned\file_2.txt
+[Cleaned] Saved to: E:\VHC\cloudserver\data\text\cleaned\file_2.txt
+[OK] Processed: file_0.txt -> file_0.txt
+[OK] Processed: file_1.txt -> file_1.txt
+[OK] Processed: file_2.txt -> file_2.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extracted 1227 characters from E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extracted 48880 characters from E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+Extracted 25550 characters from E:\VHC\cloudserver\data\drive\raw\file_2.docx
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_2.txt
+[OK] Processed: file_0.txt -> file_0.txt
+[OK] Processed: file_1.txt -> file_1.txt
+[OK] Processed: file_2.txt -> file_2.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extracted 1227 characters from E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extracted 48880 characters from E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+Extracted 25550 characters from E:\VHC\cloudserver\data\drive\raw\file_2.docx
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_2.txt
+[OK] Processed: file_0.txt -> file_0.txt
+[OK] Processed: file_1.txt -> file_1.txt
+[OK] Processed: file_2.txt -> file_2.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Extracted 1227 characters from E:\VHC\cloudserver\data\drive\raw\file_0.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_0.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Extracted 48880 characters from E:\VHC\cloudserver\data\drive\raw\file_1.pdf
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_1.txt
+=== Script Started ===
+=== Script Started ===
+File received: E:\VHC\cloudserver\data\drive\raw\file_2.docx
+Extracted 25550 characters from E:\VHC\cloudserver\data\drive\raw\file_2.docx
+Saved to: E:\VHC\cloudserver\data\text\extracted\file_2.txt
+[2025-06-18 15:13:14] Đã xử lý: file_0.txt, tạo: file_0.txt
+[2025-06-18 15:13:14] Đã xử lý: file_1.txt, tạo: file_1.txt
+[2025-06-18 15:13:14] Đã xử lý: file_2.txt, tạo: file_2.txt
+[OK] Processed: file_0.txt -> file_0.txt
+[OK] Processed: file_1.txt -> file_1.txt
+[OK] Processed: file_2.txt -> file_2.txt
+[OK] Processed: file_0.txt -> file_0.txt
+[OK] Processed: file_1.txt -> file_1.txt
+[OK] Processed: file_2.txt -> file_2.txt

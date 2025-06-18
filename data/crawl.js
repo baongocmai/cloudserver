@@ -25,7 +25,7 @@ function makeId(title, url) {
   const chunks = [];
 
   for (const category of categories) {
-    console.log(`👉 Đang xử lý danh mục: ${category.name} - ${baseURL + category.url}`);
+    console.log(`Đang xử lý danh mục: ${category.name} - ${baseURL + category.url}`);
     await page.goto(`${baseURL}${category.url}`, { waitUntil: 'networkidle2' });
 
     const links = await page.$$eval(category.selector, as =>
@@ -85,8 +85,8 @@ function makeId(title, url) {
   }
 
 //   fs.mkdirSync('/VHC/data/crawl/raw', { recursive: true });
-  fs.writeFileSync('/VHC/data/crawl/raw/mobifone_chunks.json', JSON.stringify(chunks, null, 2), 'utf-8');
-  console.log(`✅ Đã crawl xong ${chunks.length} phần nội dung. Ghi vào mobifone_chunks.json`);
+  fs.writeFileSync('E:/VHC/cloudserver/data/text/extracted/data_mobifone_crawl.json', JSON.stringify(chunks, null, 2), 'utf-8');
+  console.log(`Đã crawl xong ${chunks.length} phần nội dung. Ghi vào data_mobifone_crawl.json`);
 
   await browser.close();
 })();
