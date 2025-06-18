@@ -20,10 +20,19 @@ def extract_text_from_json(file_path: Path, text_fields: list[str]) -> str:
     with open(file_path, "r", encoding="utf-8") as f:
         data = json.load(f)
     texts = []
-    for field in text_fields:
-        if field in data:
-            texts.append(data[field])
+    if isinstance(data, list):
+        for item in data:
+            for field in text_fields:
+                if field in item and item[field]:
+                    texts.append(str(item[field]))
+    elif isinstance(data, dict):
+        for field in text_fields:
+            if field in data and data[field]:
+                texts.append(str(data[field]))
+    else:
+        print(f"Unsupported JSON structure in {file_path.name}")
     return " ".join(texts)
+
 
 def process_files(input_dir: Path, output_dir: Path, json_fields: list[str]):
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -45,8 +54,8 @@ def process_files(input_dir: Path, output_dir: Path, json_fields: list[str]):
         print(f"[Saved] {output_file.name}")
 
 # Ví dụ gọi hàm:
-input_dir = Path("E:/VHC/cloudserver/data/crawled")
-output_dir = Path("E:/VHC/cloudserver/data/cleaned")
+input_dir = Path("E:/VHC/cloudserver/data/text/extracted")
+output_dir = Path("E:/VHC/cloudserver/data/text/cleaned")
 json_fields = ["title", "body"]  # chỉnh theo dữ liệu bạn có
 
 process_files(input_dir, output_dir, json_fields)
