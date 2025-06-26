@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Mobifone cung cấp các dịch vụ cloud nào?",
+    "answer": "Mobifone cung cấp các dịch vụ cloud server như: MobiFone Cloud Server, MobiFone Cloud GPU Server, MobiFone Cloud VPS, MobiFone Object Storage, v.v..."
+  },
+  {
+    "question": "Mobifone có dịch vụ lưu trữ không?",
+    "answer": "Có. MobiFone cung cấp các dịch vụ lưu trữ như MobiFone Object Storage, File Storage và Block Storage."
+  },
+  {
+    "question": "Cách liên hệ tư vấn dịch vụ?",
+    "answer": "Vui lòng liên hệ qua số điện thoại (+84) 931.101.101 hoặc email: support.cloud@mobifone.vn để được hỗ trợ chi tiết."
+  },
+  {
+    "question": "Có các gói dịch vụ cloud nào?",
+    "answer": "Hiện nay MobiFone đang cung cấp các gói dịch vụ Cloud gồm: Cloud 1, Cloud 2, Cloud 3, Cloud 4, Cloud 5 và Cloud 6. Các gói này hỗ trợ cả ổ cứng HDD và SSD, đi kèm nhiều tùy chọn cấu hình linh hoạt. Bạn muốn tham khảo thông tin chi tiết của gói nào không ạ?"
+},
+{
+    "question": "Tư vấn",
+    "answer": "Cảm ơn bạn đã quan tâm đến dịch vụ Cloud server của MobiFone. Hiện chúng tôi đang cung cấp nhiều gói dịch vụ Cloud (Cloud 1 → Cloud 6) với ổ cứng SSD/HDD và cấu hình đa dạng. Bạn có muốn mình gợi ý theo mục đích sử dụng (VD: chạy web, phần mềm kế toán, lưu trữ...) không?"
+},
+{
+    "question": "Cloud VPS khác gì với Shared Hosting?",
+    "answer": "Đối với Shared Hosting, website của bạn được đặt trên máy chủ cùng vài trăm đến vài nghìn website khác và chia sẻ một nguồn tài nguyên từ máy chủ như CPU và RAM. Còn máy chủ ảo là một hệ thống riêng biệt được tạo ra bằng việc phân chia máy chủ vật lý với bộ xử lý CPU riêng, dung lượng bộ nhớ RAM riêng,... Người dùng sẽ có toàn quyền quản trị cao nhất khi mua VPS Việt Nam hoặc thuê VPS Việt Nam."
+},
+{
+    "question": "Chế độ sao lưu dữ liệu hoạt động ra sao?",
+    "answer": "Dữ liệu khách hàng luôn được đảm bảo an toàn với cơ chế tự động sao lưu dữ liệu đều đặn hàng tuần. Tuy nhiên, bạn hoàn toàn có thể sao lưu dữ liệu của mình bằng cách thực hiện sao lưu."
+},
+{
+    "question": "Ưu đãi hàng tháng như thế nào",
+    "answer": "Hàng tháng sẽ có ưu đãi theo từng gói cấu hình."
+},
+{
+    "question": "Cloud VPS là gì?",
+    "answer": "Cloud VPS là máy chủ ảo được phát triển dựa trên nền tảng điện toán đám mây. VPS (hay máy chủ ảo) là dịch vụ máy chủ hoạt động dưới dạng chia sẻ tài nguyên từ một máy chủ vật lý ban đầu. Dịch vụ cho thuê máy chủ ảo có tính năng giống như một máy chủ riêng. Người dùng sẽ được cấp quyền cao nhất để toàn quyền quản trị máy chủ của mình. Có thể hiểu Cloud VPS giống như Shared Web Hosting. Cloud VPS cũng sử dụng chung trên cùng một máy chủ. Vì cùng sử dụng chung nên các nhánh đó được gọi là máy ảo. Cloud VPS có thể chia sẻ và cùng sử dụng chung từ một máy chủ vật lý, nhưng có giới hạn về tài nguyên. Tương ứng với mỗi máy chủ ảo VPS đều có hệ điều hành CPU, bộ nhớ RAM,... riêng biệt giống như 1 máy chủ được quản lý và có cấu hình riêng biệt. "
+},
+{
+    "question": "Tạo máy ảo thế nào?",
+    "answer": "Để cài đặt máy ảo trên MobiFone Cloud, bạn có thể thực hiện theo các bước sau:\n\n 1. Chọn loại máy ảo và nhập tên máy ảo: Xác định loại máy và đặt tên.\n 2. Đề xuất khu vực: Hệ thống sẽ tự động gợi ý khu vực triển khai.\n 3. Chọn gói cấu hình máy ảo: Điều chỉnh CPU, RAM, ổ cứng với thanh trượt; hệ thống sẽ hiển thị bảng giá tương ứng.\n 4. Lựa chọn sử dụng IP public: Chọn có hoặc không sử dụng địa chỉ IP công cộng.\n 5. Chọn dung lượng volume gốc: Cấu hình dung lượng ổ đĩa ban đầu.\n 6. Chọn hệ điều hành: Lựa chọn hệ điều hành và phiên bản phù hợp.\n 7. Chọn keypair hoặc nhập public key: Sử dụng keypair có sẵn hoặc nhập mới.\n 8. Review thông tin: Kiểm tra lại toàn bộ thông tin cấu hình.\n 9. Tự động thanh toán: Hệ thống sẽ tiến hành thanh toán tự động.\n 10. Sinh máy ảo: Máy ảo sẽ được tạo và sẵn sàng sử dụng.\n\n Nếu bạn gặp khó khăn trong quá trình thiết lập, vui lòng liên hệ với bộ phận hỗ trợ qua: số điện thoại (+84) 931.101.101 hoặc email support.cloud@mobifone.vn"
+}
+]

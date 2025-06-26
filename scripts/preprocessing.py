@@ -16,23 +16,36 @@ def chunk_text(text: str, chunk_size: int = 500, overlap: int = 50) -> list[str]
         start += chunk_size - overlap
     return chunks
 
+from pathlib import Path
+import json
+
 def extract_text_from_json(file_path: Path, text_fields: list[str]) -> str:
     with open(file_path, "r", encoding="utf-8") as f:
         data = json.load(f)
+
     texts = []
+
     if isinstance(data, list):
         for item in data:
+            combined_fields = []
             for field in text_fields:
                 if field in item and item[field]:
-                    texts.append(str(item[field]))
+                    combined_fields.append(str(item[field]).strip())
+            if combined_fields:
+                texts.append("\n".join(combined_fields))
+
     elif isinstance(data, dict):
+        combined_fields = []
         for field in text_fields:
             if field in data and data[field]:
-                texts.append(str(data[field]))
+                combined_fields.append(str(data[field]).strip())
+        if combined_fields:
+            texts.append("\n".join(combined_fields))
+
     else:
         print(f"Unsupported JSON structure in {file_path.name}")
-    return " ".join(texts)
 
+    return "\n\n".join(texts)
 
 def process_files(input_dir: Path, output_dir: Path, json_fields: list[str]):
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -56,6 +69,6 @@ def process_files(input_dir: Path, output_dir: Path, json_fields: list[str]):
 # Ví dụ gọi hàm:
 input_dir = Path("E:/VHC/cloudserver/data/text/extracted")
 output_dir = Path("E:/VHC/cloudserver/data/text/cleaned")
-json_fields = ["title", "body"]  # chỉnh theo dữ liệu bạn có
+json_fields = ["text"]  # chỉnh theo dữ liệu bạn có
 
 process_files(input_dir, output_dir, json_fields)

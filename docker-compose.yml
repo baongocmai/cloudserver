@@ -1,0 +1,16 @@
+services:
+  weaviate:
+    image: semitechnologies/weaviate:latest
+    ports:
+      - "8080:8080"
+      - "50051:50051"
+    environment:
+      - AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED=true
+      - DEFAULT_VECTORIZER_MODULE=none
+      - ENABLE_MODULES=text2vec-openai
+      - GEMINI_APIKEY=AIzaSyCpZTbJSQPZnQRf1RxFF7mzpWgy_0UhPjg
+      - PERSISTENCE_DATA_PATH=/var/lib/weaviate
+      - QUERY_DEFAULTS_LIMIT=20
+      - WEAVIATE_CLUSTER_ENABLED=false   
+    volumes:
+      - ./weaviate_data:/var/lib/weaviate
